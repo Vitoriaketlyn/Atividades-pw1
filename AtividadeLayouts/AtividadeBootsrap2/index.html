@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vestidos Farm Mais Usados</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>Vestidos Farm Mais Usados</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#destaques">Destaques</a></li>
+                <li><a href="#tabela">Tabela de Modelos</a></li>
+                <li><a href="#formulario">Compra</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Início -->
+    <section id="home">
+        <h2>Bem-vindo à nossa coleção de vestidos Farm!</h2>
+        <p>A Farm traz, mais uma vez, sua linha de vestidos que são sucesso entre as mulheres. Acompanhe os modelos mais procurados desta temporada.</p>
+    </section>
+
+    <!-- Seção Destaques -->
+    <section id="destaques">
+        <h2>Destaques da Coleção</h2>
+        <article>
+            <h3>Vestido Floral Farm</h3>
+            <p>Clássico e leve, perfeito para os dias mais quentes. Uma peça essencial para o guarda-roupa feminino!</p>
+            <img src="vestido1.jpg" alt="Vestido Floral Farm" width="300">
+        </article>
+        <article>
+            <h3>Vestido Midi Farm</h3>
+            <p>Com um estilo mais sofisticado, ideal para diversas ocasiões. Versátil e cheio de charme.</p>
+            <img src="vestido2.jpg" alt="Vestido Midi Farm" width="300">
+        </article>
+        <article>
+            <h3>Vestido Longo Farm</h3>
+            <p>Perfeito para eventos especiais, com estampas vibrantes e um caimento incrível.</p>
+            <img src="vestido3.jpg" alt="Vestido Longo Farm" width="300">
+        </article>
+    </section>
+
+    <!-- Seção Tabela -->
+    <section id="tabela">
+        <h2>Tabela de Modelos e Preços</h2>
+        <table border="1">
+            <tr>
+                <th>Modelo</th>
+                <th>Estampa</th>
+                <th>Preço</th>
+                <th>Tamanhos Disponíveis</th>
+            </tr>
+            <tr>
+                <td>Vestido Floral</td>
+                <td>Floral colorido</td>
+                <td>R$ 299,90</td>
+                <td>P, M, G</td>
+            </tr>
+            <tr>
+                <td>Vestido Midi</td>
+                <td>Listrado</td>
+                <td>R$ 249,90</td>
+                <td>P, M, G, GG</td>
+            </tr>
+            <tr>
+                <td>Vestido Longo</td>
+                <td>Estampa Tropical</td>
+                <td>R$ 359,90</td>
+                <td>P, M, G</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Seção Formulário -->
+    <section id="formulario">
+        <h2>Formulário de Compra</h2>
+        <form action="/comprar" method="POST">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="modelo">Escolha o Modelo:</label><br>
+            <select id="modelo" name="modelo" required>
+                <option value="floral">Vestido Floral</option>
+                <option value="midi">Vestido Midi</option>
+                <option value="longo">Vestido Longo</option>
+            </select><br><br>
+
+            <label for="tamanho">Tamanho:</label><br>
+            <select id="tamanho" name="tamanho" required>
+                <option value="p">P</option>
+                <option value="m">M</option>
+                <option value="g">G</option>
+                <option value="gg">GG</option>
+            </select><br><br>
+
+            <label for="quantidade">Quantidade:</label><br>
+            <input type="number" id="quantidade" name="quantidade" min="1" required><br><br>
+
+            <input type="submit" value="Comprar Agora">
+        </form>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Se você tiver dúvidas sobre os modelos ou precisar de mais informações, não hesite em entrar em contato conosco.</p>
+        <ul>
+            <li>Email: <a href="mailto:contato@farm.com">contato@farm.com</a></li>
+            <li>Telefone: (11) 1234-5678</li>
+        </ul>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Vestidos Farm. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
